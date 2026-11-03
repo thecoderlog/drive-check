@@ -1,0 +1,12 @@
+drive-check
+  computer : Darwin arm64, RAM 16.0 GB (13.3 GB free now), room for a model: about 12.9 GB
+  drive    : write 277 MB/s, read 311 MB/s
+  drive    : read 400 MB/s from the model file
+  model    : gemma-4-E4B-it-Q4_K_M.gguf (5.0 GB)
+  verdict  : fine for this model (load about 15 s)
+  ladder   : what fits this computer (load times from this drive)
+    yes    Gemma 4 E2B Q4_K_M (3.1 GB), load about 11 s
+    yes    Gemma 4 E4B Q4_K_M (5.0 GB), load about 16 s
+    yes    Gemma 4 12B Q4_K_M (7.1 GB), load about 21 s
+    no     Gemma 4 31B Q4_K_M (18.3 GB)
+  RAM decides which model you can run. The drive decides how long you wait for it to load.
